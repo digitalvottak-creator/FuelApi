@@ -1,0 +1,35 @@
+# Создайте файл .gitignore в корне проекта
+cat > .gitignore << 'EOF'
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.env
+
+# Node/Frontend
+node_modules/
+.next/
+out/
+dist/
+*.o
+*.node
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+.DS_Store?
+
+# Database
+*.db
+*.sqlite
+fuel_api.db
+
+# Logs
+*.log
+EOF
